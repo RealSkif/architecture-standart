@@ -1,0 +1,80 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Rates Container Diagram" id="rates-container">
+    <mxGraphModel dx="969" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Диаграмма контейнеров - Передача ставок в кол-центр" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="500" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xls-files" value="XLS-файлы&#xa;со ставками&#xa;Внешние файлы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="100" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="abs" value="АБС&#xa;[Delphi + Oracle + PL-SQL]&#xa;Основная система учёта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="200" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sync-service" value="Сервис синхронизации ставок&#xa;[Java Spring Boot]&#xa;Автоматическое обновление ставок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="150" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rates-api" value="API для кол-центра&#xa;[Java Spring Boot]&#xa;Предоставление ставок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="file-exchange" value="Сервис файлового обмена&#xa;[Java Spring Boot]&#xa;Генерация и отправка файлов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="450" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="call-center-system" value="Система кол-центра&#xa;[React.js + Java Spring Boot + PostgreSQL]&#xa;Микросервисная архитектура" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="partner-call-center" value="Партнёрский кол-центр&lt;br&gt;Внешняя система" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="500" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rates-db" value="База данных ставок&#xa;[MS SQL Server]&#xa;Хранение актуальных ставок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-system" value="Система авторизации&#xa;[Java Spring Security]&#xa;Контроль доступа к ставкам" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="220" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="file-storage" value="Файловое хранилище&#xa;[Shared Folder]&#xa;Временное хранение файлов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="630" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="Читает файлы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;" parent="1" source="sync-service" target="xls-files" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="Получает данные" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;" parent="1" source="sync-service" target="abs" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="Обновляет ставки" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" parent="1" source="sync-service" target="rates-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" value="Читает ставки" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" parent="1" source="rates-api" target="rates-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" value="Проверяет доступ" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" parent="1" source="rates-api" target="auth-system" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;" parent="1" source="call-center-system" target="rates-api" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" value="Читает ставки" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" parent="1" source="file-exchange" target="rates-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" value="Сохраняет файлы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" parent="1" source="file-exchange" target="file-storage" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="490" />
+              <mxPoint x="670" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="Забирает файлы" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.461;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="partner-call-center" target="file-storage" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="582" />
+              <mxPoint x="190" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
