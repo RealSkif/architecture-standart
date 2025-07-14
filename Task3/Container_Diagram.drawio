@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Container Diagram - MVP Deposits" id="container-diagram">
+    <mxGraphModel dx="969" dy="676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Диаграмма контейнеров - MVP Онлайн-депозиты" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="500" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="website" value="Сайт банка&#xa;[PHP + React.js]&#xa;Собственная разработка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="95" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="internet-bank" value="Интернет-банк&#xa;[ASP.NET MVC 4.5 + MS SQL]&#xa;Платформа подрядчика" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="250" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="api-gateway" value="API Gateway&#xa;[.NET Core]&#xa;Центральная точка интеграции" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="100" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rates-service" value="Сервис ставок&#xa;[Java Spring Boot]&#xa;Управление ставками депозитов" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="420" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="notifications-service" value="Сервис уведомлений&#xa;[Java Spring Boot]&#xa;Отправка СМС" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="610" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="call-center-system" value="Система кол-центра&#xa;[React.js + Java Spring Boot + PostgreSQL]&#xa;Микросервисная архитектура" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="420" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="abs" value="АБС&#xa;[Delphi + Oracle + PL-SQL]&#xa;Основная система учёта" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="550" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rates-db" value="База данных ставок&#xa;[MS SQL Server]&#xa;Хранение актуальных ставок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="message-queue" value="Очередь сообщений&#xa;[MSMQ/RabbitMQ]&#xa;Асинхронная обработка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="610" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sms-gateway" value="СМС-шлюз&#xa;Телеком-оператора&#xa;Внешняя система" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="530" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="internet-bank-web" value="Web-интерфейс&#xa;[ASP.NET MVC]&#xa;Пользовательский интерфейс" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="50" y="200" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="internet-bank-api" value="API слой&#xa;[ASP.NET Web API]&#xa;Бизнес-логика" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="50" y="280" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="internet-bank-db" value="База данных&#xa;[MS SQL Server]&#xa;Данные интернет-банка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="50" y="360" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="abs-client" value="Десктопный клиент&#xa;[Delphi]&#xa;Интерфейс пользователя" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="120" y="660" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="abs-db" value="База данных&#xa;[Oracle]&#xa;Основные данные банка" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="120" y="740" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="abs-procedures" value="Хранимые процедуры&#xa;[PL-SQL]&#xa;Бизнес-логика" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="120" y="820" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="HTTPS/TLS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;" parent="1" source="website" target="api-gateway" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="HTTPS/TLS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" source="internet-bank" target="api-gateway" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;" parent="1" source="api-gateway" target="rates-service" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="240" />
+              <mxPoint x="660" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" parent="1" source="api-gateway" target="notifications-service" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;" parent="1" source="api-gateway" target="call-center-system" edge="1">
+          <mxGeometry x="0.2364" y="-10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="140" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="Файловый обмен" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;dashed=1;" parent="1" source="api-gateway" target="abs" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="140" />
+              <mxPoint x="10" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;" parent="1" source="rates-service" target="rates-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" value="AMQP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d79b00;strokeWidth=2;" parent="1" source="notifications-service" target="message-queue" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" value="HTTP API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=2;" parent="1" source="notifications-service" target="sms-gateway" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="560" />
+              <mxPoint x="1100" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="HTTP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=1;" parent="1" source="internet-bank-web" target="internet-bank-api" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge11" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#6c8ebf;strokeWidth=1;" parent="1" source="internet-bank-api" target="internet-bank-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge12" value="TCP/IP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" parent="1" source="abs-client" target="abs-db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge13" value="PL-SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#b85450;strokeWidth=1;" parent="1" source="abs-db" target="abs-procedures" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="internet-bank-group" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="180" width="190" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="abs-group" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="620" width="190" height="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
